@@ -1,200 +1,255 @@
 /* CSS GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 /* FONTS */
-/* colores */
-/* ------------------------ VISTA MOBILE HOME */
-@media (max-width: 850px) {
-  body {
-    overflow-x: hidden; }
-  /* HOME HEADER */
-  header {
-    background-color: #e7e7e7;
-    border-bottom: 2px solid #b9b9b9;
-    z-index: 1; }
-  header h1 {
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    padding-left: 45%;
-    padding-top: 10px; }
-  header nav ul {
-    list-style: none;
-    margin-left: 15px;
-    margin-top: 20px;
-    padding-left: 36%; }
-  header nav ul li {
-    display: inline-block;
-    border-bottom: 2px solid #a8a7a7;
-    padding-bottom: 15px; }
-  header nav ul a {
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    margin: 25px;
-    padding: 8px;
-    background-color: #afadad;
-    border-radius: 45px; }
-  header h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    margin-bottom: 15px;
-    margin-left: 30px; }
-  /* HERO */
-  .hero {
-    display: grid;
-    grid-template-columns: 500px 700px;
-    grid-template-rows: 800px 200px;
-    justify-content: start;
-    align-content: center;
-    height: 1200px;
-    padding-left: 55px;
-    padding-bottom: 200px;
-    padding-top: 100px;
-    background-color: #e7e7e7; }
-  .textoHero1 {
-    justify-self: end; }
-  .hero div h2 {
-    width: 500px;
-    height: 500px;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 150px;
-    text-align: start; }
-  .textoHero2 {
-    justify-self: center;
-    align-self: center; }
-  .hero div p {
-    font-size: 40px;
-    font-weight: 300;
-    font-style: normal; }
-  .imagenCentral {
-    position: relative; }
-  .heroImagen {
-    width: 700px;
-    height: 800px;
-    object-fit: cover; }
-  .imagenCircular {
-    position: absolute;
-    top: 700px;
-    right: 320px;
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    object-fit: cover; }
-  .heroExtra {
-    background-color: #e7e7e7;
-    border-bottom: 2px solid #a8a7a7; }
-  .heroDerecha {
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    width: 100px;
-    height: 100px;
-    left: 25%; }
-  .heroDerecha h2 {
-    font-size: 60px; }
-  .heroDerecha h3 {
-    font-size: 40px; }
-  .heroIzquierda {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 65%;
-    right: 100px;
-    top: 1100px; }
-  .heroIzquierda h2 {
-    font-size: 60px; }
-  .heroIzquierda h3 {
-    font-size: 40px;
-    width: 500px;
-    height: 500px; }
-  .heroExtra a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    left: 43%;
-    background-color: grey;
-    padding: 15px;
-    border-radius: 50px;
-    top: 15px;
-    font-size: 25px; }
-  /* MAIN */
-  main h1 {
-    text-align: center;
-    padding-top: 80px;
-    font-size: 50px;
-    font-weight: 200; }
-  .productos h2 {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 30px;
-    font-weight: 200; }
-  /* -------------- GALERIA DE PRODUCTOS */
-  .productos div {
-    display: inline-block;
-    text-align: center; }
-  .productos div img {
-    position: relative;
-    left: 90px;
-    width: 450px;
-    height: 650px;
-    margin: 60px;
-    object-fit: cover;
-    padding-bottom: 50px;
-    border-bottom: 2px solid #a8a7a7; }
-  .productos div p {
-    position: relative;
-    background-color: rgba(185, 174, 174, 0.664);
-    width: 450px;
-    padding: 10px 0 10px 0;
-    bottom: 158px;
-    left: 150px;
-    font-size: 20px; }
-  /* FOOTER */
-  footer {
-    background-color: #e7e7e7; } }
+@media only screen and (max-width: 1300px) {
+  .complete-nav .nav-section-d .main-nv {
+    gap: 1.5rem; }
+  body main .features .left-card div a {
+    padding: 1.5vh 1vw; } }
 
-/* ---------------------- VISTA MOBIL PRODUCTOS */
-@media only screen and (min-width: 0px) and (max-width: 1500px) {
-  .login {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 150px 50px 50px 20px 50px 20px;
-    row-gap: 10px;
-    justify-content: center;
-    padding-top: 50px; }
-  .headerLogin {
-    font-weight: 300;
-    font-size: 50px;
-    text-align: center; }
-  .inputLogin1 {
-    height: 35px;
-    width: 300px; }
-  .inputLogin2 {
-    height: 35px;
-    width: 300px; }
-  .input {
-    align-self: center;
-    justify-self: center; }
-  .botonLogin {
-    align-self: center;
-    justify-self: center; }
-  .signinB {
-    background-color: beige;
-    font-weight: 500; } }
+@media only screen and (max-width: 1100px) {
+  .complete-nav .nav-section-d .main-nv {
+    gap: 1rem; }
+  body main .features .left-card div h2 {
+    font-size: 1.5vw; }
+  body main .features .left-card div a {
+    padding: 1.5vh 0.5vw; } }
 
-/* colores */
-/* colores */
+@media only screen and (max-width: 1005px) {
+  .complete-nav {
+    align-items: flex-end;
+    justify-content: center; }
+    .complete-nav .hamburger {
+      display: block;
+      justify-self: start;
+      cursor: pointer;
+      padding-bottom: 21px;
+      padding-left: 15px; }
+      .complete-nav .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0; }
+    .complete-nav .nav-section-d {
+      height: 0;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      transition: 0.2s;
+      overflow: hidden; }
+      .complete-nav .nav-section-d .main-nv {
+        display: block;
+        width: fit-content;
+        text-align: start;
+        transition: 0.5s;
+        opacity: 0; }
+        .complete-nav .nav-section-d .main-nv li {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+      .complete-nav .nav-section-d .main-nv.active {
+        opacity: 1; }
+    .complete-nav .nav-section-d.active {
+      height: 200px; }
+    .complete-nav .nav-section {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 100%;
+      padding-right: 15px; }
+      .complete-nav .nav-section h1 {
+        padding-bottom: 12px;
+        padding-right: 5px; }
+    .complete-nav .nav-section-i {
+      display: none; }
+      .complete-nav .nav-section-i .sub-nv {
+        display: none; }
+  body main .features {
+    padding: 10px;
+    padding-bottom: 150px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 220vh; }
+    body main .features .left-card {
+      display: none; }
+    body main .features .right-card h2 {
+      font-size: 3vw;
+      padding-bottom: 10px; }
+    body main .features .right-card a {
+      font-size: 1.5vw; }
+  body main .texto-about div p {
+    font-size: 22px; }
+  body main .texto-about div a {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 900px) {
+  .complete-nav {
+    align-items: flex-end;
+    justify-content: center; }
+    .complete-nav .hamburger {
+      display: block;
+      justify-self: start;
+      cursor: pointer;
+      padding-bottom: 21px;
+      padding-left: 15px; }
+      .complete-nav .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0; }
+    .complete-nav .nav-section-d {
+      height: 0;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      transition: 0.2s;
+      overflow: hidden; }
+      .complete-nav .nav-section-d .main-nv {
+        display: block;
+        width: fit-content;
+        text-align: start;
+        transition: 0.5s;
+        opacity: 0; }
+        .complete-nav .nav-section-d .main-nv li {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+      .complete-nav .nav-section-d .main-nv.active {
+        opacity: 1; }
+    .complete-nav .nav-section-d.active {
+      height: 200px; }
+    .complete-nav .nav-section {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 100%;
+      padding-right: 15px; }
+      .complete-nav .nav-section h1 {
+        padding-bottom: 12px;
+        padding-right: 5px; }
+    .complete-nav .nav-section-i {
+      display: none; }
+      .complete-nav .nav-section-i .sub-nv {
+        display: none; }
+  body main .features {
+    padding: 10px;
+    padding-bottom: 150px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200vh; }
+    body main .features .left-card {
+      display: none; }
+    body main .features .right-card h2 {
+      font-size: 3vw;
+      padding-bottom: 10px; }
+    body main .features .right-card a {
+      font-size: 1.5vw; }
+  body main .texto-about div p {
+    font-size: 22px; }
+  body main .texto-about div a {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 500px) {
+  .complete-nav {
+    align-items: flex-end;
+    justify-content: center; }
+    .complete-nav .hamburger {
+      display: block;
+      justify-self: start;
+      cursor: pointer;
+      padding-bottom: 21px;
+      padding-left: 15px; }
+      .complete-nav .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0; }
+    .complete-nav .nav-section-d {
+      height: 0;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      transition: 0.2s;
+      overflow: hidden; }
+      .complete-nav .nav-section-d .main-nv {
+        display: block;
+        width: fit-content;
+        text-align: start;
+        transition: 0.5s;
+        opacity: 0; }
+        .complete-nav .nav-section-d .main-nv li {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+      .complete-nav .nav-section-d .main-nv.active {
+        opacity: 1; }
+    .complete-nav .nav-section-d.active {
+      height: 200px; }
+    .complete-nav .nav-section {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 100%;
+      padding-right: 15px; }
+      .complete-nav .nav-section h1 {
+        padding-bottom: 12px;
+        padding-right: 5px; }
+    .complete-nav .nav-section-i {
+      display: none; }
+      .complete-nav .nav-section-i .sub-nv {
+        display: none; }
+  body main .features {
+    padding: 10px;
+    padding-bottom: 150px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 180vh; }
+    body main .features .left-card {
+      display: none; }
+    body main .features .right-card h2 {
+      font-size: 4vw;
+      padding-bottom: 10px; }
+    body main .features .right-card a {
+      font-size: 2vw; }
+  body main .texto-about div p {
+    font-size: 22px; }
+  body main .texto-about div a {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 900px) {
+  .galeriaProductos {
+    flex-direction: column;
+    align-items: center; }
+    .galeriaProductos div {
+      width: 70vw !important; } }
+
+@media only screen and (max-width: 960px) {
+  .ABmuestra div {
+    flex-direction: column; }
+  .ABmuestra img {
+    width: 100% !important; }
+  .ABmuestra .ABimgFT {
+    padding: 60px 30px !important; } }
+
 body main .ABhero {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
   body main .ABhero img {
     align-self: center;
     padding: 40px;
@@ -220,8 +275,8 @@ body main .ABmuestra {
     width: 90%;
     background-color: #f0f0f0; }
     body main .ABmuestra div img {
-      height: 460px;
-      width: 660px;
+      height: 50vh;
+      width: 40vw;
       object-fit: cover; }
     body main .ABmuestra div .ABimgFT {
       padding: 80px 120px;
@@ -235,195 +290,392 @@ body main .ABmuestra {
         font-weight: 300; }
   body main .ABmuestra #spacer {
     height: 110px;
-    background-color: white; }
+    background-color: #f6f6f2; }
 
 /* FOOTER */
 .container {
   padding-top: 200px; }
 
-/* colores */
 /* HOME HEADER */
 body header {
-  background-color: #e7e7e7;
-  border-bottom: 2px solid #b9b9b9;
-  z-index: 1; }
-  body header h1 {
-    color: black;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    padding-top: 25px;
-    padding-bottom: 10px; }
-  body header nav .navegacion {
+  background-color: #f6f6f2;
+  padding-top: 10px;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  transition: all 300ms ease-in-out; }
+  body header nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    padding-top: 15px; }
-  body header nav ul {
-    list-style: none; }
-    body header nav ul li {
-      border-bottom: 2px solid #a1a0a0;
-      padding: 10px;
-      padding-bottom: 20px;
-      transition: 0.8s linear; }
-      body header nav ul li:hover {
-        border-bottom: 2px solid #2c2c2c;
-        padding: 10px;
-        padding-bottom: 10px; }
-      body header nav ul li a {
-        text-decoration: none;
+    overflow: hidden;
+    width: 100%;
+    height: 7vh; }
+    body header nav .nav-section-d {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-basis: calc(100% / 3); }
+      body header nav .nav-section-d .main-nv {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding-left: 40px; }
+        body header nav .nav-section-d .main-nv li {
+          list-style: none; }
+          body header nav .nav-section-d .main-nv li a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 15px;
+            transition: 1s ease-in-out; }
+            body header nav .nav-section-d .main-nv li a:hover {
+              text-decoration: none;
+              border-bottom: 1px solid; }
+    body header nav .nav-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-basis: calc(100% / 3); }
+      body header nav .nav-section h1 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-size: 12px;
-        margin: 25px;
-        padding: 6px;
-        background-color: #e4dede;
-        border-radius: 45px;
-        padding-left: 45px;
-        padding-right: 45px;
-        transition: 0.3s ease-in-out; }
-        body header nav ul li a:hover {
-          text-decoration: none;
-          color: white;
-          background-color: #6e6b6b; }
-  body header h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 30px;
-    margin-bottom: 15px;
-    margin-left: 65px; }
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        font: bold 1.2em "Lucida Sans Regular";
+        font-size: 30px; }
+    body header nav .nav-section-i {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-right: 40px;
+      flex-basis: calc(100% / 3); }
+      body header nav .nav-section-i .sub-nv {
+        display: flex;
+        gap: 1rem; }
+        body header nav .nav-section-i .sub-nv img {
+          height: 20px;
+          width: 20px; }
+        body header nav .nav-section-i .sub-nv li {
+          list-style: none; }
+          body header nav .nav-section-i .sub-nv li a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 15px;
+            transition: 1s ease-in-out; }
+            body header nav .nav-section-i .sub-nv li a:hover {
+              text-decoration: none;
+              border-bottom: 1px solid; }
 
-/* colores */
-body main .login {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 90px 50px 50px 20px 50px 20px;
-  row-gap: 10px;
+.scroll-down header {
+  transform: translate3d(0, -100%, 0); }
+
+.scroll-up header {
+  filter: drop-shadow(0 -10px 20px #aaaaaa); }
+
+.login-body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #bcbec8, #f6f6f2);
+  display: flex;
   justify-content: center;
-  padding-top: 100px; }
-  body main .login div .headerLogin {
-    font-weight: 300;
-    font-size: 50px;
-    text-align: center;
-    align-self: center;
-    justify-self: center; }
-  body main .login .input {
-    align-self: center;
-    justify-self: center; }
-    body main .login .input .inputLogin1 {
-      height: 35px;
-      width: 300px; }
-    body main .login .input .inputLogin2 {
-      height: 35px;
-      width: 300px; }
-  body main .login .botonLogin {
-    align-self: center;
-    justify-self: center; }
-  body main .login .signinB {
-    background-color: beige;
-    font-weight: 500; }
-    body main .login .signinB:hover {
-      background-color: #696965;
-      color: white; }
-
-/* colores */
-/* MAIN */
-main .hero {
-  display: grid;
-  grid-template-columns: 500px 550px 500px;
-  grid-template-rows: 700px;
-  grid-column-gap: 20px;
-  justify-content: center;
-  align-content: center;
-  height: 800px;
-  padding-bottom: 400px;
-  padding-top: 600px;
-  background-color: #e7e7e7; }
-  main .hero .textoHero1 {
-    justify-self: end; }
-    main .hero .textoHero1 h2 {
-      width: 500px;
-      height: 500px;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 100px;
-      text-align: end; }
-  main .hero .imagenCentral {
-    position: relative;
-    object-fit: cover; }
-    main .hero .imagenCentral .heroImagen {
-      width: 550px;
-      height: 700px; }
-    main .hero .imagenCentral .imagenCircular {
-      position: absolute;
-      top: 250px;
-      left: 500px;
-      width: 320px;
-      height: 320px;
-      border-radius: 100%;
-      object-fit: cover; }
-  main .hero .textoHero2 {
-    justify-self: start; }
-  main .hero div p {
-    width: 400px;
-    font-size: 30px;
-    font-weight: 300;
-    font-style: normal; }
-
-main .heroExtra {
-  position: relative;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 150px;
-  align-content: end;
-  height: 300px;
-  background-color: #e7e7e7;
-  border-bottom: 5px solid #a8a7a7; }
-  main .heroExtra .heroIzquierda {
-    justify-self: center; }
-    main .heroExtra .heroIzquierda h2 {
-      font-size: 60px; }
-    main .heroExtra .heroIzquierda h3 {
-      font-size: 30px; }
-  main .heroExtra .heroDerecha {
-    justify-self: center; }
-    main .heroExtra .heroDerecha h2 {
-      font-size: 60px; }
-    main .heroExtra .heroDerecha h3 {
-      font-size: 30px; }
-  main .heroExtra .botonHE {
+  align-items: center; }
+  .login-body div .login-card {
+    width: 450px;
+    background: #f6f6f2;
+    padding: 3rem;
+    border-radius: 10px;
+    position: relative; }
+    .login-body div .login-card .login-card-logo {
+      margin-bottom: 1.5rem; }
+      .login-body div .login-card .login-card-logo h1 {
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        font: bold 1.2em "Lucida Sans Regular";
+        font-size: 25px; }
+  .login-body div .login-card::before {
+    content: '';
     position: absolute;
-    justify-self: center;
-    top: 278px;
-    height: 40px;
-    width: 350px;
-    background-color: #899e9e;
-    color: black;
+    inset: 0;
+    background: rgba(61, 21, 26, 0.375);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1; }
+  .login-body div .login-card-header {
+    margin-bottom: 2rem; }
+    .login-body div .login-card-header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: .5rem; }
+    .login-body div .login-card-header div {
+      font-size: calc(1rem * .8);
+      opacity: .8; }
+  .login-body div .login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+    .login-body div .login-card-form .form-item {
+      position: relative; }
+      .login-body div .login-card-form .form-item .form-item-icon {
+        position: absolute;
+        top: .82rem;
+        left: 1.4rem;
+        font-size: 1.3rem;
+        opacity: .4; }
+    .login-body div .login-card-form .form-item-other {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: calc(1rem * .8);
+      margin-bottom: .5rem; }
+      .login-body div .login-card-form .form-item-other .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 7px; }
+      .login-body div .login-card-form .form-item-other a {
+        text-decoration: none; }
+    .login-body div .login-card-form button {
+      background: black;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-variant: "Open Sans";
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 1rem;
+      border-radius: 100px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.2s ease-in-out; }
+      .login-body div .login-card-form button:hover {
+        background-color: #f6f6f2;
+        color: black; }
+  .login-body div .login-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8); }
+    .login-body div .login-card-footer a {
+      text-decoration: none; }
+  .login-body div .login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     text-align: center;
-    justify-content: center;
+    margin-top: 3rem; }
+    .login-body div .login-card-social div {
+      opacity: .8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: calc(1rem * .8); }
+    .login-body div .login-card-social .login-card-social-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; }
+      .login-body div .login-card-social .login-card-social-btns a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        transition: all .5s; }
+        .login-body div .login-card-social .login-card-social-btns a:hover {
+          background-color: white;
+          transform: scale(1.1); }
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center; }
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: background .5s; }
+
+.login-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: black; }
+  .login-card input[type="checkbox"]:focus {
+    background: white; }
+
+.login-card input:focus {
+  background: white; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-body {
+    padding: 2rem 0; }
+  .login-card {
+    width: 280px;
+    padding: 2rem; } }
+
+/* ---------- */
+/* MAIN */
+main section {
+  background-color: #f6f6f2; }
+  main section .side {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: absolute; }
+    main section .side .tittle {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-variant: "Open Sans";
+      font-size: 8vw;
+      margin: 0px 10vw;
+      width: 80vw; }
+      main section .side .tittle .fancy {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 1.3em;
+        line-height: 0.8em; }
+  main section #left-side {
+    background-image: url("https://img.freepik.com/free-photo/brown-sofa-wooden-table-living-room-interior-with-plant-concrete-wall_41470-3721.jpg?w=1380&t=st=1668561658~exp=1668562258~hmac=5c5657b38e947e142785c992e361c0450484e382872c7406e599a7a1f48bb20c");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2; }
+    main section #left-side .tittle {
+      color: #e7e7e7; }
+      main section #left-side .tittle .fancy {
+        color: #e8dab2; }
+  main section #right-side {
+    background-image: url("https://img.freepik.com/free-photo/gray-sofa-white-living-room_43614-796.jpg?w=1380&t=st=1668561871~exp=1668562471~hmac=5f378ad07f28aacb0d355f91d4324b753df4d5718dbefc64269b6ccfa847dc5b");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    main section #right-side .tittle {
+      color: #3d151a; }
+      main section #right-side .tittle .fancy {
+        color: #dd6e42; }
+
+main .features {
+  padding: 50px;
+  z-index: 2;
+  padding-top: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 230vh; }
+  main .features .left-card {
+    width: 200vw; }
+    main .features .left-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-bottom: 25px; }
+    main .features .left-card div {
+      display: flex;
+      justify-content: space-between; }
+      main .features .left-card div h2 {
+        padding-left: 8px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Open Sans', 'Helvetica Neue', sans-serif;
+        font-variant: "Open Sans";
+        letter-spacing: 2px;
+        font-size: 2vw;
+        font-weight: 600; }
+      main .features .left-card div a {
+        text-decoration: none;
+        padding: 1.5vh 3vw;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-variant: "Open Sans";
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 0.8vw;
+        border: 1px solid black;
+        background-color: #f6f6f2;
+        transition: 0.2s ease-in-out; }
+        main .features .left-card div a:hover {
+          color: #f6f6f2;
+          background-color: #3d151a; }
+  main .features .right-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main .features .right-card h2 {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: "Open Sans";
+    letter-spacing: 2px;
+    font-size: 2.5vw;
+    font-weight: 500; }
+  main .features .right-card a {
     text-decoration: none;
-    padding-top: 2px;
-    font-size: 23px;
-    border-radius: 50px; }
+    padding: 1.5vh 3vw;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: "Open Sans";
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 0.8vw;
+    border: 1px solid black;
+    background-color: #f6f6f2;
+    transition: 0.2s ease-in-out; }
+    main .features .right-card a:hover {
+      color: #f6f6f2;
+      background-color: #3d151a; }
 
 main .productosDestacados {
   display: grid;
-  grid: 'PDtittle PDtittle PDtittle' 'product1 product2 product3';
-  grid-template-columns: 320px 320px 320px;
-  grid-template-rows: 150px 420px;
-  grid-column-gap: 150px;
-  grid-row-gap: 20px;
-  justify-content: center;
-  padding: 150px; }
-  main .productosDestacados .PDtittle {
-    grid-area: PDtittle;
-    justify-self: center;
-    align-self: baseline;
-    font-size: 45px; }
+  grid: 'PDtittle PDtittle PDtittle PDtittle' 'pd-button pd-button pd-button pd-button' 'product1 product2 product3 product4';
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 50px 35px 420px;
+  width: 100%;
+  height: 80vh;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: start;
+  padding: 20px;
+  padding-left: 4.5vw; }
+  main .productosDestacados .PDtittle h3 {
+    padding-left: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: "Open Sans";
+    font-size: 27px;
+    font-weight: 600; }
+  main .productosDestacados .PDbutton {
+    grid-area: pd-button;
+    display: flex;
+    padding-left: 5px; }
+    main .productosDestacados .PDbutton a {
+      text-decoration: none;
+      color: black;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-variant: "Open Sans";
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 15px;
+      padding-top: 3px; }
+      main .productosDestacados .PDbutton a:hover {
+        color: #dd6e42; }
+    main .productosDestacados .PDbutton img {
+      padding-left: 10px;
+      height: 30px;
+      width: 40px;
+      transition: 0.3s ease-in-out; }
+      main .productosDestacados .PDbutton img:hover {
+        transform: translateX(25%); }
   main .productosDestacados .productDesc1 {
     grid-area: product1; }
     main .productosDestacados .productDesc1 img {
@@ -431,103 +683,159 @@ main .productosDestacados {
       width: 320px;
       height: 420px;
       object-fit: cover;
-      transition: 0.5s ease-in-out; }
+      transition: 0.2s ease-in-out; }
       main .productosDestacados .productDesc1 img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.05); }
   main .productosDestacados .productDesc2 {
-    grid-area: product2; }
+    grid-area: product2;
+    transition-delay: 200ms; }
     main .productosDestacados .productDesc2 img {
       width: 320px;
       height: 420px;
       object-fit: cover;
-      transition: 0.5s ease-in-out; }
+      transition: 0.2s ease-in-out; }
       main .productosDestacados .productDesc2 img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.05); }
   main .productosDestacados .productDesc3 {
-    grid-area: product3; }
+    grid-area: product3;
+    transition-delay: 400ms; }
     main .productosDestacados .productDesc3 img {
       width: 320px;
       height: 420px;
       object-fit: cover;
-      transition: 0.5s ease-in-out; }
+      transition: 0.2s ease-in-out; }
       main .productosDestacados .productDesc3 img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.05); }
+  main .productosDestacados .productDesc4 {
+    grid-area: product4;
+    transition-delay: 600ms; }
+    main .productosDestacados .productDesc4 img {
+      width: 320px;
+      height: 420px;
+      object-fit: cover;
+      transition: 0.2s ease-in-out; }
+      main .productosDestacados .productDesc4 img:hover {
+        transform: scale(1.05); }
 
-/* colores */
+main .texto-about {
+  border-bottom: 1px solid black; }
+  main .texto-about div {
+    padding-bottom: 30vh;
+    padding-left: 25%;
+    padding-right: 25%; }
+    main .texto-about div p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-variant: "Open Sans";
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: 2px;
+      text-align: justify;
+      width: 100%;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e8dab2; }
+    main .texto-about div a {
+      text-decoration: none;
+      color: black;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-variant: "Open Sans";
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 15px;
+      padding-top: 3px; }
+      main .texto-about div a:hover {
+        color: #dd6e42; }
+    main .texto-about div img {
+      padding-left: 10px;
+      height: 30px;
+      width: 40px;
+      transition: 0.3s ease-in-out; }
+      main .texto-about div img:hover {
+        transform: translateX(25%); }
+
+main .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s; }
+
+main .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0); }
+
 body main div div .carr1 {
   height: 60vh;
   width: 100%;
   object-fit: cover; }
 
 body main .productosHero {
+  display: flex;
   height: 100px;
-  width: 1200px;
-  padding: 100px; }
+  width: 100%;
+  justify-content: center;
+  padding: 50px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.099); }
   body main .productosHero h2 {
-    font-size: 30px;
-    font-weight: 400; }
-  body main .productosHero p {
-    font-size: 15px;
-    font-weight: 300; }
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px; }
 
-body main .galeriaProductos1 {
+body main .galeriaProductos {
   display: flex;
-  justify-content: space-around;
-  padding: 50px; }
-  body main .galeriaProductos1 div img {
-    height: 470px;
-    width: 320px;
-    object-fit: cover;
-    transition: 0.3s ease-in-out; }
-    body main .galeriaProductos1 div img:hover {
-      transform: scale(1.2); }
-  body main .galeriaProductos1 div .footerProductos {
-    display: grid;
-    grid-template-columns: 160px 160px;
-    grid-template-rows: 30px;
-    width: 320px;
-    padding-top: 5px; }
-    body main .galeriaProductos1 div .footerProductos h1 {
-      font-size: 15px;
-      font-weight: 200;
-      justify-self: start; }
-      body main .galeriaProductos1 div .footerProductos h1 .precio {
-        font-size: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  gap: 20px;
+  padding: 1vw;
+  padding-top: 50px; }
+  body main .galeriaProductos div {
+    width: 25vw;
+    padding-bottom: 100px; }
+    body main .galeriaProductos div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.1s ease-in-out; }
+      body main .galeriaProductos div img:hover {
+        filter: drop-shadow(0 5px 8px #aaaaaa);
+        transform: scale(1.005); }
+    body main .galeriaProductos div .footerProductos {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 30px;
+      width: 100%;
+      padding-top: 10px; }
+      body main .galeriaProductos div .footerProductos h1 {
+        font-size: 13px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-variant: "Open Sans";
+        letter-spacing: 2px;
         font-weight: 200;
-        justify-self: end; }
-
-body main .galeriaProductos2 {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px; }
-  body main .galeriaProductos2 div img {
-    height: 470px;
-    width: 320px;
-    object-fit: cover;
-    transition: 0.3s ease-in-out; }
-    body main .galeriaProductos2 div img:hover {
-      transform: scale(1.2); }
-  body main .galeriaProductos2 div .footerProductos {
-    display: grid;
-    grid-template-columns: 160px 160px;
-    grid-template-rows: 30px;
-    width: 320px;
-    padding-top: 5px; }
-    body main .galeriaProductos2 div .footerProductos h1 {
-      font-size: 15px;
-      font-weight: 200;
-      justify-self: start; }
-      body main .galeriaProductos2 div .footerProductos h1 .precio {
-        font-size: 15px;
+        width: 15vw;
+        justify-self: start; }
+      body main .galeriaProductos div .footerProductos .later {
+        color: #dd6e42;
+        font-weight: 400; }
+      body main .galeriaProductos div .footerProductos .precio {
+        font-size: 13px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-variant: "Open Sans";
+        letter-spacing: 2px;
         font-weight: 200;
         justify-self: end; }
 
 body main .galeriaProductos3 {
-  background-color: rgba(250, 235, 215, 0.356);
+  background-color: #f6f6f2;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  body main .galeriaProductos3 div img {
-    height: 400px;
-    width: 900px;
-    object-fit: cover; }
+  justify-content: center;
+  padding-bottom: 90px;
+  padding-top: 100px; }
+  body main .galeriaProductos3 div {
+    width: 80vw; }
+    body main .galeriaProductos3 div img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover; }

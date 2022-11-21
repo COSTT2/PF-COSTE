@@ -1,271 +1,445 @@
 @import "../base/variables";
 
-/* ------------------------ VISTA MOBILE HOME */
-@media (max-width: 850px) {
+
+@media only screen and (max-width: 1300px) {
+
+    // MEDIA QUERY HEADER RESPONSIVE
+    .complete-nav {
+        .nav-section-d {
+            .main-nv {
+                gap: 1.5rem;
+            }
+        }
+    }
 
     body {
-        overflow-x: hidden;
+        main {
+            .features {
+                .left-card {
+                    div {
+                        a {
+                            padding: 1.5vh 1vw;
+                        }
+                    }
+                }
+            }
+        }
     }
-
-    /* HOME HEADER */
-    header {
-        background-color: rgb(231, 231, 231);
-        border-bottom: 2px solid rgb(185, 185, 185);
-        z-index: 1;
-    }
-
-    header h1 {
-        color: black;
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-size: 25px;
-        padding-left: 45%;
-        padding-top: 10px;
-    }
-
-    header nav ul {
-        list-style: none;
-        margin-left: 15px;
-        margin-top: 20px;
-        padding-left: 36%;
-    }
-
-    header nav ul li {
-        display: inline-block;
-        border-bottom: 2px solid rgb(168, 167, 167);
-        padding-bottom: 15px;
-    }
-
-    header nav ul a {
-        text-decoration: none;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-size: 12px;
-        margin: 25px;
-        padding: 8px;
-        background-color: rgb(175, 173, 173);
-        border-radius: 45px;
-    }
-
-    header h2 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        margin-bottom: 15px;
-        margin-left: 30px;
-    }
-
-    /* HERO */
-
-    .hero {
-        display: grid;
-        grid-template-columns: 500px 700px;
-        grid-template-rows: 800px 200px;
-        justify-content: start;
-        align-content: center;
-        height: 1200px;
-        padding-left: 55px;
-        padding-bottom: 200px;
-        padding-top: 100px;
-        background-color: rgb(231, 231, 231);
-    }
-
-    .textoHero1 {
-        justify-self: end;
-    }
-
-    .hero div h2 {
-        width: 500px;
-        height: 500px;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 150px;
-        text-align: start;
-    }
-
-    .textoHero2 {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .hero div p {
-        font-size: 40px;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    .imagenCentral {
-        position: relative;
-    }
-
-    .heroImagen {
-        width: 700px;
-        height: 800px;
-        object-fit: cover;
-    }
-
-    .imagenCircular {
-
-        position: absolute;
-        top: 700px;
-        right: 320px;
-
-        width: 400px;
-        height: 400px;
-        border-radius: 100%;
-        object-fit: cover;
-    }
-
-    .heroExtra {
-        background-color: rgb(231, 231, 231);
-        border-bottom: 2px solid rgb(168, 167, 167);
-
-    }
-
-    .heroDerecha {
-        position: relative;
-        padding-top: 100px;
-        padding-bottom: 40px;
-        width: 100px;
-        height: 100px;
-        left: 25%;
-    }
-
-    .heroDerecha h2 {
-        font-size: 60px;
-    }
-
-    .heroDerecha h3 {
-        font-size: 40px;
-    }
-
-
-    .heroIzquierda {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        left: 65%;
-        right: 100px;
-        top: 1100px;
-
-    }
-
-    .heroIzquierda h2 {
-        font-size: 60px;
-    }
-
-    .heroIzquierda h3 {
-        font-size: 40px;
-        width: 500px;
-        height: 500px;
-    }
-
-    .heroExtra a {
-        position: relative;
-        text-decoration: none;
-        color: white;
-        left: 43%;
-        background-color: grey;
-        padding: 15px;
-        border-radius: 50px;
-        top: 15px;
-        font-size: 25px;
-    }
-
-    /* MAIN */
-
-    main h1 {
-        text-align: center;
-        padding-top: 80px;
-        font-size: 50px;
-        font-weight: 200;
-    }
-
-    .productos h2 {
-        text-align: center;
-        padding-top: 10px;
-        font-size: 30px;
-        font-weight: 200;
-    }
-
-    /* -------------- GALERIA DE PRODUCTOS */
-
-    .productos div {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .productos div img {
-        position: relative;
-        left: 90px;
-        width: 450px;
-        height: 650px;
-        margin: 60px;
-        object-fit: cover;
-        padding-bottom: 50px;
-        border-bottom: 2px solid rgb(168, 167, 167);
-    }
-
-    .productos div p {
-        position: relative;
-        background-color: rgba(185, 174, 174, 0.664);
-        width: 450px;
-        padding: 10px 0 10px 0;
-        bottom: 158px;
-        left: 150px;
-        font-size: 20px;
-    }
-
-    /* FOOTER */
-
-    footer {
-        background-color: rgb(231, 231, 231);
-    }
-
 }
 
-/* ---------------------- VISTA MOBIL PRODUCTOS */
+@media only screen and (max-width: 1100px) {
 
-@media only screen and (min-width: 0px) and (max-width: 1500px) {
+    // MEDIA QUERY HEADER RESPONSIVE
+    .complete-nav {
+        .nav-section-d {
+            .main-nv {
+                gap: 1rem;
+            }
+        }
+    }
 
-    .login {
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 150px 50px 50px 20px 50px 20px;
-        row-gap: 10px;
+    body {
+        main {
+            .features {
+                .left-card {
+                    div {
+                        h2 {
+                            font-size: 1.5vw;
+                        }
+
+                        a {
+                            padding: 1.5vh 0.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+
+    // MEDIA QUERY HEADER RESPONSIVE
+    .complete-nav {
+        align-items: flex-end;
         justify-content: center;
-        padding-top: 50px;
+
+        .hamburger {
+            display: block;
+            justify-self: start;
+            cursor: pointer;
+            padding-bottom: 21px;
+            padding-left: 15px;
+
+            .line {
+                width: 30px;
+                height: 3px;
+                background-color: black;
+                margin: 6px 0;
+            }
+        }
+
+        .nav-section-d {
+            height: 0;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: white;
+            transition: 0.2s;
+            overflow: hidden;
+
+            .main-nv {
+                display: block;
+                width: fit-content;
+                text-align: start;
+                transition: 0.5s;
+                opacity: 0;
+
+                li {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .main-nv.active {
+                opacity: 1;
+            }
+        }
+
+        .nav-section-d.active {
+            height: 200px;
+        }
+
+        .nav-section {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 100%;
+            padding-right: 15px;
+
+            h1 {
+                padding-bottom: 12px;
+                padding-right: 5px;
+            }
+        }
+
+        .nav-section-i {
+            display: none;
+
+            .sub-nv {
+                display: none;
+            }
+        }
     }
 
-    .headerLogin {
-        font-weight: 300;
-        font-size: 50px;
-        text-align: center;
+    // MEDIA QUERY HOME RESPONSIVE
+    body {
+        main {
+            .features {
+                padding: 10px;
+                padding-bottom: 150px;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                height: 220vh;
+
+                .left-card {
+                    display: none;
+                }
+
+                .right-card {
+                    h2 {
+                        font-size: 3vw;
+                        padding-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+
+            .texto-about {
+                div {
+                    p {
+                        font-size: 22px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    // MEDIA QUERY HEADER RESPONSIVE
+    .complete-nav {
+        align-items: flex-end;
+        justify-content: center;
+
+        .hamburger {
+            display: block;
+            justify-self: start;
+            cursor: pointer;
+            padding-bottom: 21px;
+            padding-left: 15px;
+
+            .line {
+                width: 30px;
+                height: 3px;
+                background-color: black;
+                margin: 6px 0;
+            }
+        }
+
+        .nav-section-d {
+            height: 0;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: white;
+            transition: 0.2s;
+            overflow: hidden;
+
+            .main-nv {
+                display: block;
+                width: fit-content;
+                text-align: start;
+                transition: 0.5s;
+                opacity: 0;
+
+                li {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .main-nv.active {
+                opacity: 1;
+            }
+        }
+
+        .nav-section-d.active {
+            height: 200px;
+        }
+
+        .nav-section {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 100%;
+            padding-right: 15px;
+
+            h1 {
+                padding-bottom: 12px;
+                padding-right: 5px;
+            }
+        }
+
+        .nav-section-i {
+            display: none;
+
+            .sub-nv {
+                display: none;
+            }
+        }
     }
 
-    .inputLogin1 {
-        height: 35px;
-        width: 300px;
+    // MEDIA QUERY HOME RESPONSIVE
+    body {
+        main {
+            .features {
+                padding: 10px;
+                padding-bottom: 150px;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                height: 200vh;
+
+                .left-card {
+                    display: none;
+                }
+
+                .right-card {
+                    h2 {
+                        font-size: 3vw;
+                        padding-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+
+            .texto-about {
+                div {
+                    p {
+                        font-size: 22px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    // MEDIA QUERY HEADER RESPONSIVE
+    .complete-nav {
+        align-items: flex-end;
+        justify-content: center;
+
+        .hamburger {
+            display: block;
+            justify-self: start;
+            cursor: pointer;
+            padding-bottom: 21px;
+            padding-left: 15px;
+
+            .line {
+                width: 30px;
+                height: 3px;
+                background-color: black;
+                margin: 6px 0;
+            }
+        }
+
+        .nav-section-d {
+            height: 0;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: white;
+            transition: 0.2s;
+            overflow: hidden;
+
+            .main-nv {
+                display: block;
+                width: fit-content;
+                text-align: start;
+                transition: 0.5s;
+                opacity: 0;
+
+                li {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .main-nv.active {
+                opacity: 1;
+            }
+        }
+
+        .nav-section-d.active {
+            height: 200px;
+        }
+
+        .nav-section {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 100%;
+            padding-right: 15px;
+
+            h1 {
+                padding-bottom: 12px;
+                padding-right: 5px;
+            }
+        }
+
+        .nav-section-i {
+            display: none;
+
+            .sub-nv {
+                display: none;
+            }
+        }
     }
 
-    .inputLogin2 {
-        height: 35px;
-        width: 300px;
-    }
+    // MEDIA QUERY HOME RESPONSIVE
+    body {
+        main {
+            .features {
+                padding: 10px;
+                padding-bottom: 150px;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                height: 180vh;
 
-    .input {
-        align-self: center;
-        justify-self: center;
-    }
+                .left-card {
+                    display: none;
+                }
 
-    .botonLogin {
-        align-self: center;
-        justify-self: center;
-    }
+                .right-card {
+                    h2 {
+                        font-size: 4vw;
+                        padding-bottom: 10px;
+                    }
 
-    .signinB {
-        background-color: beige;
-        font-weight: 500;
-    }
+                    a {
+                        font-size: 2vw;
+                    }
+                }
+            }
 
+            .texto-about {
+                div {
+                    p {
+                        font-size: 22px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE PRODUCTS
+
+@media only screen and (max-width: 900px) {
+    .galeriaProductos {
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 70vw !important;
+        }
+    }
+}
+// RESPONSIVE ABOUT US
+
+@media only screen and (max-width: 960px) {
+    .ABmuestra{
+        div{
+            flex-direction: column;
+        }
+        img{
+            width: 100% !important;
+        }
+        .ABimgFT {
+            padding: 60px 30px !important;
+        }
+
+    }
 }

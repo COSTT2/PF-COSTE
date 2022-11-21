@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/favicon_io/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
     <meta name="description" content="Tienda de diseño de venta de muebles">
     <meta name="keywords" content="muebles, diseño, diseño industrial, muebles de diseño, mesas, sillas">
     <meta property="og:tittle" content="Web site">
@@ -19,64 +20,114 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
-        <h1>DESIGN HOUSE</h1>
-        <nav>
-            <ul class="navegacion">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/productos.html">PRODUCTS</a></li>
-                <li><a href="./pages/about.html">ABOUT</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a>Tab</a></li>
-            </ul>
+        <nav class="complete-nav">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-section-d">
+                <ul class="main-nv">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/about.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h1>DESIGN HOUSE</h1>
+            </div>
+            <div class="nav-section-i">
+                <ul class="sub-nv">
+                    <li><a href="#">Buscar</a></li>
+                    <img src="./img/vidrio-de-aumento.png" alt="lupa">
+                    <li><a href="./pages/login.html">Comprar</a></li>
+                    <img src="./img/big-bag-con-asas.png" alt="bolsaDeCompras">
+                </ul>
+            </div>
         </nav>
-        <h2>HOME</h2>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="textoHero1">
-                <h2>Entrando al diseño</h2>
+
+        <!-- FOTOS TIPO CARROUSEL HOME -->
+
+        <section>
+            <div id="left-side" class="side">
+                <h2 class="tittle">
+                    Encontrá diseños que
+                    <span class="fancy"> enamoran </span>
+                </h2>
             </div>
-            <div class="imagenCentral">
-                <img src="./img/MesaConSillas.jpg" alt="ImagenPrincipal" class="heroImagen">
-                <img src="./img/sillon con lamparas.jpg" alt="ImagenCircular" class="imagenCircular">
-            </div>
-            <div class="textoHero2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime?</p>
+            <div id="right-side" class="side">
+                <h2 class="tittle">
+                    Encontrá diseños que
+                    <span class="fancy"> encanten </span>
+                </h2>
             </div>
         </section>
 
-        <section class="heroExtra">
-            <div class="heroIzquierda">
-                <h2>lorem,</h2>
-                <h3>ipsum</h3>
+        <!-- --------- CARTAS DE IMAGENES HOME -------- -->  
+
+        <section class="features">
+            <div class="left-card">
+                <img src="./img/MesaConSillas.jpg" alt="Mesa con Sillas - Mas vendidos">
+                <div>
+                    <h2>Mas vendidos</h2>
+                    <a href="./pages/productos.html">VER MAS</a>
+                </div>
             </div>
-            <div class="heroDerecha">
-                <h2>200.000</h2>
-                <h3>ipsum dolor.</h3>
+            <div class="right-card">
+                <img src="./img/maderas.jpg" alt="Foto hombre con maderas introductoria About Us">
+                <h2>Los mejores diseñadores</h2>
+                <a href="./pages/about.html">CONOCENOS</a>
             </div>
-            <a class="botonHE" href="./pages/productos.html">Ver todos los productos</a>
         </section>
 
+
+        <!-- PRODUCTOS DESTACADOS HOME -->
 
         <section class="productosDestacados">
-            <h1 class="PDtittle">Productos destacados</h1>
-            <div class="productDesc1">
-                <img src="./img/comoda.jpg" alt="imagen de comoda">
+            <div class="PDtittle">
+                <h3>Algo de nuestro catálogo</h3>
+            </div>
+            <div class="PDbutton">
+                <a class="boton-h-section" href="./pages/productos.html">VER TODO
+                <img src="./img/flecha-correcta.png" alt="icono-flecha"></a>
+            </div>
+            <div class="productDesc1 hidden">
+                <img src="./img/canasto.jpg" alt="imagen de canasto">
                 <p></p>
             </div>
-            <div class="productDesc2">
+            <div class="productDesc2 hidden">
                 <img src="./img/mesa2.jpg" alt="imagen de mesa">
                 <p></p>
             </div>
-            <div class="productDesc3">
-                <img src="./img/silla con banco.jpg" alt="imagen de banco">
+            <div class="productDesc3 hidden">
+                <img src="./img/silla con banco.jpg" alt="imagen de silla">
+                <p></p>
+            </div>
+            <div class="productDesc4 hidden">
+                <img src="./img/SillaMimbre.jpg" alt="imagen de silla mimbre">
                 <p></p>
             </div>
         </section>
-    </main>
 
+        <!-- TEXTO INTRODUCCION ABOUT HOME -->
+
+        <section class="texto-about">
+            <div>
+                <p>Una verdadera obra de diseño debe emocionar, 
+                transmitir emociones, traer recuerdos,
+                sorprender, ir a contracorriente.</p>
+                <a class="boton-h-section" href="./pages/about.html">SOBRE NOSOTROS
+                <img src="./img/flecha-correcta.png" alt="icono-flecha"></a>
+            </div>
+        </section>
+    </main>
+    <!-- --------- FOOTER -------- -->
     <footer>
 
         <div class="container">
@@ -85,19 +136,19 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Navegación</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Products</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Log In</a></li>
+                            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/productos.html" class="nav-link p-0 text-muted">Products</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/about.html" class="nav-link p-0 text-muted">About</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/login.html" class="nav-link p-0 text-muted">Log In</a></li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Servicio al cliente</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Envios</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carrito</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/login.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/login.html" class="nav-link p-0 text-muted">Envios</a></li>
+                            <li class="nav-item mb-2"><a href="./pages/login.html" class="nav-link p-0 text-muted">Carrito</a></li>
                         </ul>
                     </div>
 
@@ -146,6 +197,74 @@
     <!-- BOOSTRAP JS INTERNO -->
     <script src="./js/bootstrap.min.js"></script>
 
+    <!-- CODIGO JS ANIMACION PARA OCULTAR EL HEADER AL SCROLL -->
+    <script>
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up")
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+
+            if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+            }
+
+            lastScroll = currentScroll;
+        })
+    </script>
+
+    <!-- CODIGO JS PARA EL CAMBIO DE IMAGENES EN EL HERO -->
+    <script>
+        const left = document.getElementById("left-side");
+
+        const handleMove = e => {
+            left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+        }
+
+        document.onmousemove = e => handleMove(e);
+
+        document.ontouchmove = e => handleMove(e.touches[0]);
+
+    </script>
+
+    <!-- CODIGO JS PARA ANIMACION DE DESTACADOS DEL HOME  -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target,classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+    <!-- RESPONSIVE NAV HAMBURGER -->
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-section-d");
+            navBar.classList.toggle("active");
+            ul = document.querySelector(".main-nv");
+            ul.classList.toggle("active");
+        }
+    </script>
+    
 </body>
 
 </html>
